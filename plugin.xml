@@ -6,7 +6,7 @@
     <name>Cordova Smartlook Plugin</name>
     <description></description>
     <license>MIT</license>
-    <keywords>cordoava,smartlook,plugin</keywords>
+    <keywords>cordova,smartlook,plugin</keywords>
     <repo>https://github.com/driftyco/cordova-plugin-template.git</repo>
     <issue>https://github.com/driftyco/cordova-plugin-template/issues</issue>
 
@@ -14,20 +14,21 @@
         <engine name="cordova" version=">=3.6.0"></engine>
     </engines>
 
-    <js-module src="www/Smartlook.js" name="Smartlook">
-      <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-      <clobbers target="Smartlook" />
+    <js-module src="www/smartlook.js" name="smartlook">
+      <clobbers target="smartlook" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
+      <source-file src="src/android/com/smartlook/SmartlookPlugin.java" target-dir="src/com/smartlook/" />
+
       <config-file target="res/xml/config.xml" parent="/*">
         <feature name="Smartlook">
           <param name="android-package" value="com.smartlook.SmartlookPlugin" />
         </feature>
       </config-file>
 
-      <source-file src="src/android/com/smartlook/SmartlookPlugin.java" target-dir="src/com/smartlook/" />
       <framework src="com.smartlook.recording:app:0.9.0.2.5.7-beta"/>
+
     </platform>
 </plugin>
