@@ -29,7 +29,7 @@
         </feature>
       </config-file>
 
-      <framework src="com.smartlook.recording:app:0.9.0.2.5.7-beta"/>
+      <framework src="smartlook.gradle" custom="true" type="gradleReference" />
 
     </platform>
 </plugin>
