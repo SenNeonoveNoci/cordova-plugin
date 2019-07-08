@@ -4,7 +4,7 @@ var PLUGIN_NAME = 'SmartlookPlugin';
 
 var smartlook = function() {};
 
-Smartlook.init = function (apiKey, successCallback, failCallback) {
+smartlook.init = function (apiKey, successCallback, failCallback) {
   return exec(successCallback, failCallback, PLUGIN_NAME, 'init', []);
 }
 

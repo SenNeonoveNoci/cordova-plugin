@@ -3,6 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-smartlook"
     version="1.0.0">
+
     <name>Cordova Smartlook Plugin</name>
     <description></description>
     <license>MIT</license>
@@ -20,10 +21,10 @@
 
     <!-- android -->
     <platform name="android">
-      <source-file src="src/android/com/smartlook/SmartlookPlugin.java" target-dir="src/com/smartlook/" />
+      <source-file src="src/android/com/smartlook/SmartlookPlugin.java" target-dir="src/com/smartlook" />
 
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="Smartlook">
+        <feature name="SmartlookPlugin">
           <param name="android-package" value="com.smartlook.SmartlookPlugin" />
         </feature>
       </config-file>

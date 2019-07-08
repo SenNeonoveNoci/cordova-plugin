@@ -34,6 +34,6 @@ public class SmartlookPlugin extends CordovaPlugin {
       return true;
     }
 
-    return true;
+    return false;
   }
 }
