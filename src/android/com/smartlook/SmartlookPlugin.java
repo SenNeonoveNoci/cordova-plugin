@@ -21,7 +21,7 @@ public class SmartlookPlugin extends CordovaPlugin {
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
     if(action.equals("init")) {
       for(int i=0; i <1000; i++) {
-        Log.d(TAG, "init run from Cordova")
+        Log.d(TAG, "init run from Cordova");
       } 
 
         cordova.getActivity().runOnUiThread(new Runnable() {
