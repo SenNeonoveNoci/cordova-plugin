@@ -24,9 +24,11 @@ public class SmartlookPlugin extends CordovaPlugin {
         Log.d(TAG, "init run from Cordova");
       } 
 
-        cordova.getActivity().runOnUiThread(new Runnable() {
+      Activity cordovaActivity = cordova.getActivity();
+
+      cordovaActivity.runOnUiThread(new Runnable() {
             public void run() {
-              Smartlook.init("c8d68fc8cfc145993b983d4404f85f8d4ff59773", cordova.getActivity);
+              Smartlook.init("c8d68fc8cfc145993b983d4404f85f8d4ff59773", cordovaActivity);
               Smartlook.enableWebviewRecording(true);
               callbackContext.success();
             }
